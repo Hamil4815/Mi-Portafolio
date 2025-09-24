@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Iko Linh — Portafolio</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap');
+
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: #0f0f0f;
+      color: #eaeaea;
+      line-height: 1.6;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1.2rem 3rem;
+      background: #111;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+
+    header h1 {
+      margin: 0;
+      font-weight: 700;
+      color: #7df9ff;
+    }
+
+    nav a {
+      margin-left: 1.5rem;
+      color: #eaeaea;
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #7df9ff;
+    }
+
+    .hero {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      min-height: 90vh;
+      background: linear-gradient(135deg, #0f0f0f 40%, #1a1a40);
+      padding: 2rem;
+    }
+
+    .hero h2 {
+      font-size: 3rem;
+      margin: 0;
+    }
+
+    .hero p {
+      font-size: 1.3rem;
+      margin: 1rem 0 2rem;
+      color: #aaa;
+    }
+
+    .btn {
+      background: #7df9ff;
+      color: #111;
+      padding: 0.8rem 1.5rem;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: background 0.3s;
+    }
+
+    .btn:hover {
+      background: #50e3c2;
+    }
+
+    section {
+      max-width: 1000px;
+      margin: 4rem auto;
+      padding: 0 2rem;
+    }
+
+    section h3 {
+      font-size: 2rem;
+      margin-bottom: 1.5rem;
+      color: #7df9ff;
+      text-align: center;
+    }
+
+    .projects {
+      display: grid;
+      gap: 2rem;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    }
+
+    .card {
+      background: #1a1a1a;
+      padding: 1.5rem;
+      border-radius: 12px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.3);
+      transition: transform 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .skills {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1rem;
+    }
+
+    .skill {
+      background: #222;
+      padding: 0.6rem 1rem;
+      border-radius: 20px;
+      font-size: 0.9rem;
+      border: 1px solid #333;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem;
+      background: #111;
+      margin-top: 3rem;
+      color: #777;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Iko Linh</h1>
+    <nav>
+      <a href="#about">Sobre mí</a>
+      <a href="#projects">Proyectos</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact">Contacto</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2>Machine Learning Engineer</h2>
+    <p>Construyo modelos desde scratch, optimizo código y creo proyectos con pasión.</p>
+    <a href="#" class="btn">Descargar CV</a>
+  </section>
+
+  <section id="about">
+    <h3>Sobre mí</h3>
+    <p>
+      Soy un desarrollador autodidacta con experiencia en deep learning, computer vision y 
+      desarrollo de proyectos desde cero. Me motiva aprender y crear soluciones que funcionen 
+      aunque los recursos sean limitados.
+    </p>
+  </section>
+
+  <section id="projects">
+    <h3>Proyectos</h3>
+    <div class="projects">
+      <div class="card">
+        <h4>Framework de Deep Learning</h4>
+        <p>Implementación propia de un mini-framework estilo PyTorch para entender cómo funcionan las redes neuronales por dentro.</p>
+      </div>
+      <div class="card">
+        <h4>Snake Game</h4>
+        <p>Juego clásico de la culebrita, programado desde cero para practicar lógica y diseño.</p>
+      </div>
+      <div class="card">
+        <h4>Reddit Scraper</h4>
+        <p>Script que recolecta conversaciones reales para construir datasets de entrenamiento.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="skills">
+    <h3>Skills</h3>
+    <div class="skills">
+      <span class="skill">Python</span>
+      <span class="skill">PyTorch</span>
+      <span class="skill">Node.js</span>
+      <span class="skill">Deep Learning</span>
+      <span class="skill">Computer Vision</span>
+      <span class="skill">Data Processing</span>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h3>Contacto</h3>
+    <p style="text-align:center">
+      📧 <a href="mailto:tuemail@ejemplo.com" style="color:#7df9ff">tuemail@ejemplo.com</a> <br>
+      🔗 <a href="https://github.com/tuusuario" target="_blank" style="color:#7df9ff">GitHub</a> | 
+      <a href="https://linkedin.com/in/tuusuario" target="_blank" style="color:#7df9ff">LinkedIn</a>
+    </p>
+  </section>
+
+  <footer>
+    <p>© 2025 Iko Linh — Todos los derechos reservados</p>
+  </footer>
+</body>
+</html>
