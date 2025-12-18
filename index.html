@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -44,26 +45,29 @@
       color: #7df9ff;
     }
 
+    @media (max-width: 600px) {
+      .hero {
+        padding-top: 4rem;
+        min-height: calc(100vh - 64px);
+        padding-left: 1rem;
+        padding-right: 1rem;
+      }
+    }
+
     .hero {
       display: flex;
       flex-direction: column;
-      justify-content: center;
+      justify-content: flex-start;
+      /* empuja el contenido hacia arriba */
       align-items: center;
       text-align: center;
-      min-height: 90vh;
+      min-height: calc(30vh - 76px);
+      /* deja espacio para el header */
       background: linear-gradient(135deg, #0f0f0f 40%, #1a1a40);
-      padding: 2rem;
-    }
-
-    .hero h2 {
-      font-size: 3rem;
-      margin: 0;
-    }
-
-    .hero p {
-      font-size: 1.3rem;
-      margin: 1rem 0 2rem;
-      color: #aaa;
+      padding: 4rem 2rem 2rem;
+      /* más espacio arriba */
+      padding-top: 6rem;
+      /* ajusta según prefieras */
     }
 
     .btn {
@@ -75,6 +79,7 @@
       font-weight: 600;
       transition: background 0.3s;
     }
+
 
     .btn:hover {
       background: #50e3c2;
@@ -103,7 +108,7 @@
       background: #1a1a1a;
       padding: 1.5rem;
       border-radius: 12px;
-      box-shadow: 0 0 15px rgba(0,0,0,0.3);
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
       transition: transform 0.3s;
     }
 
@@ -135,6 +140,7 @@
     }
   </style>
 </head>
+
 <body>
   <header>
     <h1>Iko Linh</h1>
@@ -146,17 +152,17 @@
     </nav>
   </header>
 
-  <section class="hero">
+  <section id="about" class="hero">
     <h2>Machine Learning Engineer</h2>
     <p>Construyo modelos desde scratch, optimizo código y creo proyectos con pasión.</p>
     <a href="#" class="btn">Descargar CV</a>
   </section>
 
-  <section id="about">
+  <section>
     <h3>Sobre mí</h3>
     <p>
-      Soy un desarrollador autodidacta con experiencia en deep learning, computer vision y 
-      desarrollo de proyectos desde cero. Me motiva aprender y crear soluciones que funcionen 
+      Soy un desarrollador autodidacta con experiencia en deep learning, computer vision y
+      desarrollo de proyectos desde cero. Me motiva aprender y crear soluciones que funcionen
       aunque los recursos sean limitados.
     </p>
   </section>
@@ -166,13 +172,17 @@
     <div class="projects">
       <div class="card">
         <h4>Framework de Deep Learning</h4>
-        <p>Implementación propia de un mini-framework estilo PyTorch para entender cómo funcionan las redes neuronales por dentro.</p>
-          <!-- <a href="projects/numsRec.html" class="btn">Ver más</a> -->
-           <a href="https://hamil4815.github.io/numsCnn/" class="btn">Ver más</a>
+        <p>Implementación propia de un mini-framework estilo PyTorch para entender cómo funciona el aprendizaje profundo.</p>
+        <!-- <a href="https://hamil4815.github.io/numsCnn/" class="btn">Ver más</a> -->
+      </div>
+      <div class="card">
+        <h4>Predictor de numeros</h4>
+        <p>Implementación propia de una red neuronal para predecir números de 0 a 9 con el framework antes mensionado.</p>
+        <a href="https://hamil4815.github.io/numsCnn/" class="btn">Ver más</a>
       </div>
       <div class="card">
         <h4>Snake Game</h4>
-        <p>Juego clásico de la culebrita, programado desde cero para practicar lógica y diseño.</p>
+        <p>Juego clásico de la culebrita, programado desde cero para practicar lógica y diseño de varios algoritmos de aprendizaje por refuerzo.</p>
         <a href="https://hamil4815.github.io/snakePro/" class="btn">Ver más</a>
       </div>
       <div class="card">
@@ -199,18 +209,14 @@
     <h3>Contacto</h3>
     <p style="text-align:center">
       📧 <a href="mailto:halcivar60@gmail.com" style="color:#7df9ff">halcivar60@gmail.com</a> <br>
-      🔗 <a href="https://github.com/Hamil4815" target="_blank" style="color:#7df9ff">GitHub</a> | 
+      🔗 <a href="https://github.com/tuusuario" target="_blank" style="color:#7df9ff">GitHub</a> |
       <a href="https://linkedin.com/in/tuusuario" target="_blank" style="color:#7df9ff">LinkedIn</a>
     </p>
   </section>
-  <script src= "/port.js"></script>
+  <script src="/port.js"></script>
   <footer>
     <p>© 2025 Iko Linh — Todos los derechos reservados</p>
   </footer>
 </body>
+
 </html>
-
-
-
-
-
